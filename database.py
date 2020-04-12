@@ -14,7 +14,7 @@ class Transaction:
             self.time = time
 
     def as_list(self):
-        return [str(self.date+ self.time+ self.amount+ self.concept + '\r\n')]
+        return self.date + ',' + self.time + ',' + str(self.amount) + ',' + self.concept + '\r\n'
 
     def __repr__(self):
         if self.amount > 0:
@@ -28,15 +28,17 @@ class Database:
     
     def add_transaction(self, transaction):
         if self.in_database(transaction):
-            print('no')
+            raise FileExistsError
+        else:
+            with open(self.filename, 'a') as file:
+                writer = csv.writer(file)
+                writer.writerow([transaction.date, transaction.time, transaction.amount, transaction.concept])
+                print('written')
 
     def in_database(self, transaction):
         with open(self.filename, 'r', newline='') as file:
             transactions = [transaction for transaction in file][1:]
-        print(transactions[0])
-        print(transaction.as_list())
-
-starbucks = Transaction('Starbucks', -123.32, '4/20/20', '4:20')
-print(starbucks)
-db = Database('transactions.csv')
-db.add_transaction(starbucks)
+            for transaction_ffile in transactions:
+                if transaction_ffile == transaction.as_list():
+                    return True
+            return None        
