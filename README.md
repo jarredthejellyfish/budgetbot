@@ -1,4 +1,4 @@
-<h1 align="center">BudgetBot</h1>
+<h1 align="center"style=font-size:80px>BudgetBot</h1>
 
 <div align="center">
 
