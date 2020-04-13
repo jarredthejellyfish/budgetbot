@@ -9,17 +9,9 @@
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
 [![Platform](https://img.shields.io/badge/platform-reddit-orange.svg)](https://www.reddit.com/user/Wordbook_Bot)
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
-
----
-
-<p align="center"> 🤖 Welcome to BudgetBot, this little fella will make your budgeting life easier.
-    <br> 
-</p>
 
 ## Table of Contents
 
@@ -30,7 +22,7 @@
 - [Getting Started](#getting_started)
 - [Built Using](#built_using)
 - [TODO](../TODO.md)
-- [Authors](#authors)
+- [Author](#authors)
 
 ## About <a name = "about"></a>
 
@@ -58,7 +50,7 @@ To use the bot, type:
 ```
 /start
 ```
-
+#######################################################
 The first part, i.e. "!dict" **is not** case sensitive.
 
 The bot will then give you the Oxford Dictionary (or Urban Dictionary; if the word does not exist in the Oxford Dictionary) definition of the word as a comment reply.
