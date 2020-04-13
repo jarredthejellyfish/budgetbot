@@ -55,8 +55,8 @@ The bot will then be enabled on the current conversation or group chat. After th
 * Overbudget notification.
 
 ### Examples:
-> @BudgetBot I spent 32€ at Starbuck today.
-> @BudgetBot I got 312€ from work.
+> <p> @BudgetBot I spent 32€ at Starbuck today. <br />@BudgetBot I got 312€ from work.</p>
+ 
 
 ---
 
