@@ -55,17 +55,22 @@ The first part, i.e. "/start" **is not** case sensitive.
 
 The bot will then be enabled on the current conversation or group chat. After that you just need to send messages containing a concept and amount and optionally the date and time of purchase.
 
+### Bot Supports:
+* Adding any form of transaction (adding or subtracting from balance).
+* Getting daily spending.
+* Getting daily budget.
+* Overbudget notification.
+
 ### Example:
 
-> BudgetBot I spent 32€ at Starbuck today.
+> @BudgetBot I spent 32€ at Starbuck today.
+> @BudgetBot I got 312€ from work.
 
 ---
 
-<sup>Beep boop. I am a bot. If there are any issues, contact my [Master](https://www.reddit.com/message/compose/?to=PositivePlayer1&subject=/u/Wordbook_Bot)</sup>
+<sup>Beep boop. I am a bot. If there are any issues, contact my [Master](gerard@learndeath.co)</sup>
 
-<sup>Want to make a similar reddit bot? Check out: [GitHub](https://github.com/kylelobo/Reddit-Bot)</sup>
-
-## 🏁 Getting Started <a name = "getting_started"></a>
+## Getting Started <a name = "getting_started"></a>
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
