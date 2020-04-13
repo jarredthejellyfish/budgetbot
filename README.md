@@ -21,7 +21,7 @@
     <br> 
 </p>
 
-## 📝 Table of Contents
+## Table of Contents
 
 - [About](#about)
 - [Demo / Working](#demo)
@@ -32,31 +32,31 @@
 - [TODO](../TODO.md)
 - [Authors](#authors)
 
-## 🧐 About <a name = "about"></a>
+## About <a name = "about"></a>
 
 BudgetBot uses NPL (natural language processing) to determine when you have made a purchase or recived money and how much. 
 It stores all of that info in a CSV database that can be uploaded to Google Sheets or any other spreadhseet service that can make your financial life considerably easier.
 
-## 🎥 Demo / Working <a name = "demo"></a>
+## Demo <a name = "demo"></a>
 
 ![Working](https://media.giphy.com/media/20NLMBm0BkUOwNljwv/giphy.gif)
 
-## 💭 How it works <a name = "working"></a>
+## How it works <a name = "working"></a>
 
-The bot first extracts the word from the comment and then fetches word definitions, part of speech, example and source from the Oxford Dictionary API.
+The bot reads your message and runs it through a couple of NPL algorythms to extract any importnat information related to the financial content.
 
-If the word does not exist in the Oxford Dictionary, the Oxford API then returns a 404 response upon which the bot then tries to fetch results form the Urban Dictionary API.
+If it has all the requiered information, it generates a database object and stores it for convenient use later.
 
-The bot uses the Pushshift API to fetch comments, PRAW module to reply to comments and Heroku as a server.
+The bot uses the GSheet.
 
-The entire bot is written in Python 3.6
+The entire bot is written in Python 3.7
 
-## 🎈 Usage <a name = "usage"></a>
+## Usage <a name = "usage"></a>
 
 To use the bot, type:
 
 ```
-!dict word
+/start
 ```
 
 The first part, i.e. "!dict" **is not** case sensitive.
@@ -116,7 +116,7 @@ until finished
 
 End with an example of getting some data out of the system or using it for a little demo.
 
-## 🚀 Deploying your own bot <a name = "deployment"></a>
+## Deploying your own bot <a name = "deployment"></a>
 
 To see an example project on how to deploy your bot, please see my own configuration:
 
@@ -133,7 +133,7 @@ To see an example project on how to deploy your bot, please see my own configura
 
 See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
 
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
+## Acknowledgements <a name = "acknowledgement"></a>
 
 - Hat tip to anyone whose code was used
 - Inspiration
