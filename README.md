@@ -17,7 +17,7 @@
 
 ---
 
-<p align="center"> 🤖 Welcome to BudgetBot, this little fella will make your budgeting life easier. It uses NPL (natural language processing) to determine when you have made a purchase or recived money and how much.
+<p align="center"> 🤖 Welcome to BudgetBot, this little fella will make your budgeting life easier.
     <br> 
 </p>
 
@@ -34,7 +34,8 @@
 
 ## 🧐 About <a name = "about"></a>
 
-Write about 1-2 paragraphs describing the purpose of your bot.
+BudgetBot uses NPL (natural language processing) to determine when you have made a purchase or recived money and how much. 
+It stores all of that info in a CSV database that can be uploaded to Google Sheets or any other spreadhseet service that can make your financial life considerably easier.
 
 ## 🎥 Demo / Working <a name = "demo"></a>
 
