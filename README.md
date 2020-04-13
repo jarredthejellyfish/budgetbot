@@ -44,7 +44,7 @@ To use the bot, type:
 /start
 ```
 
-The first part, i.e. "/start" **is not** case sensitive.
+The initialization command, i.e. "/start" **is not** case sensitive.
 
 The bot will then be enabled on the current conversation or group chat. After that you just need to send messages containing a concept and amount and optionally the date and time of purchase.
 
@@ -55,7 +55,7 @@ The bot will then be enabled on the current conversation or group chat. After th
 * Overbudget notification.
 
 ### Examples:
-> <p> @BudgetBot I spent 32€ at Starbuck today. <br />@BudgetBot I got 312€ from work.</p>
+> <p> @BudgetBot I spent 32€ at Starbuck today. <br /> @BudgetBot I got 312€ from work. <br /> @BudgetBot how much can I spend today?</p>
  
 
 ---
