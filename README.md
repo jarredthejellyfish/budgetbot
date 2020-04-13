@@ -50,27 +50,14 @@ To use the bot, type:
 ```
 /start
 ```
-#######################################################
-The first part, i.e. "!dict" **is not** case sensitive.
 
-The bot will then give you the Oxford Dictionary (or Urban Dictionary; if the word does not exist in the Oxford Dictionary) definition of the word as a comment reply.
+The first part, i.e. "/start" **is not** case sensitive.
+
+The bot will then be enabled on the current conversation or group chat. After that you just need to send messages containing a concept and amount and optionally the date and time of purchase.
 
 ### Example:
 
-> !dict what is love
-
-**Definition:**
-
-Baby, dont hurt me~
-Dont hurt me~ no more.
-
-**Example:**
-
-Dude1: Bruh, what is love?
-Dude2: Baby, dont hurt me, dont hurt me- no more!
-Dude1: dafuq?
-
-**Source:** https://www.urbandictionary.com/define.php?term=what%20is%20love
+> BudgetBot I spent 32€ at Starbuck today.
 
 ---
 
