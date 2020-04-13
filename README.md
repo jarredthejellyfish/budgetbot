@@ -14,7 +14,7 @@
 - [How it works](#working)
 - [Usage](#usage)
 - [Built Using](#built_using)
-- [TODO](../TODO.md)
+- [To Do](#to_do)
 - [Author](#authors)
 
 ## About <a name = "about"></a>
@@ -70,6 +70,11 @@ The bot will then be enabled on the current conversation or group chat. After th
 ## Author <a name = "authors"></a>
 
 - [@jarredthejellyfish](https://github.com/jarredthejellyfish) - Idea & Work
+
+## To Do: <a name = "to_do"></a>
+- [x] Finish DB
+- [ ] Start NPL
+- [ ] Finish README.md
 
 ## Acknowledgements <a name = "acknowledgement"></a>
 
