@@ -50,9 +50,6 @@ class SelfTest:
     except:
         print('Database classes file contains errors.')
 
-
-test_object = SelfTest()
-test_object.database_testing()
       
 
     
