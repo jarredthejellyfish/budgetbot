@@ -17,7 +17,7 @@ class Transaction:
     # Return all values from transaction as a dictionarty object.
     def as_dict(self):
         return {'DATE': self.date, 'TIME': self.time, 'AMOUNT': str(self.amount), 'CONCEPT': self.concept}
-
+    
     # Representation method
     def __repr__(self):
         # If the transaction adds to balance.
@@ -28,7 +28,7 @@ class Transaction:
             return 'Spent {} at {} on {} at {}'.format(self.amount, self.concept, self.date, self.time)
 
 class Database:
-    def __init__(self, filename):
+    def __init__(self, filename='transactions.csv'):
         # Set the filename for the database file.
         self.filename = filename
     
@@ -36,7 +36,7 @@ class Database:
     def add_transaction(self, transaction):
         # Check if transaction has already been added.
         if self.in_database(transaction):
-            print('File exists in db')
+            print('already in db')
         # If it has not, add it.
         else:
             # Open CSV file.
@@ -74,3 +74,27 @@ class Database:
             return matched_transactions
         else:
             return None
+
+    def remove_transaction(self, transaction):
+        # Storage for non-removed transactions.
+        transaction_list = []
+        # CSV headers
+        headers = ['DATE', 'TIME', 'AMOUNT', 'CONCEPT']
+        # Open CSV file into a dictionary reader.
+        reader = csv.DictReader(open(self.filename, 'r'))
+        for row in reader:
+            # If the read dictionary from the current row does not match the 
+            # transaction, store itin the transaction_list.
+            if not transaction.as_dict() == dict(row):
+                transaction_list.append(dict(row))
+        # Delete all contents from file
+        open(self.filename, 'w').close()
+        # Open the blank CSV as into a file object.
+        with open(self.filename, 'a') as file:
+                # Create a CSV writer with file object as input.
+                writer = csv.writer(file)
+                # Write header to file.
+                writer.writerow(['DATE', 'TIME', 'AMOUNT', 'CONCEPT'])
+                # Write each row stored in transaction_list to the CSV file.
+                for row in transaction_list:
+                    writer.writerow(row.values())
