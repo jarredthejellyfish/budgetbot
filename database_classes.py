@@ -30,7 +30,7 @@ class Transaction:
 class Database:
     def __init__(self, chat_id):
         # Generate the filename for the database file.
-        fname = str(chat_id) + '.csv'
+        fname = './userdata/' + str(chat_id) + '.csv'
 
         try:
             f = open(fname)

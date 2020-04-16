@@ -10,3 +10,4 @@ __pycache__
 *.csv
 testing.py 
 self_test.py
+/userdata
