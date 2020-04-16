@@ -3,7 +3,7 @@ import csv
 
 class Transaction:
     # Initialize transaction and add values to self.
-    def __init__(self, concept, amount, date=None, time=None):
+    def __init__(self, amount, concept='Not stated', date=None, time=None):
         self.concept = concept
         self.amount = round(amount,2)
         if not time:
@@ -28,15 +28,26 @@ class Transaction:
             return 'Spent {} at {} on {} at {}'.format(self.amount, self.concept, self.date, self.time)
 
 class Database:
-    def __init__(self, filename='transactions.csv'):
-        # Set the filename for the database file.
-        self.filename = filename
+    def __init__(self, chat_id):
+        # Generate the filename for the database file.
+        fname = str(chat_id) + '.csv'
+
+        try:
+            f = open(fname)
+            print('opened')
+        except:
+            f = open(fname, 'w+')
+            writer = csv.writer(f)
+            writer.writerow(['DATE', 'TIME', 'AMOUNT', 'CONCEPT'])
+        
+        f.close
+        self.filename = fname
     
     # Add transaction as row to the file @ self.filename
     def add_transaction(self, transaction):
         # Check if transaction has already been added.
         if self.in_database(transaction):
-            print('already in db')
+            raise FileExistsError
         # If it has not, add it.
         else:
             # Open CSV file.

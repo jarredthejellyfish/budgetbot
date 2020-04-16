@@ -1,6 +1,6 @@
 
 class SelfTest:
-  def __init__(self, fname='transactions.csv'):
+  def __init__(self, fname='00000000'):
     self.fname = fname
 
   def database_testing(self):
@@ -8,7 +8,7 @@ class SelfTest:
       from database_classes import Transaction, Database
 
       try:
-        test_transaction = Transaction('This is a test', 123.321, '04/20/2020', '00:00:00')
+        test_transaction = Transaction(123.321, 'This is a test', '04/20/2020', '00:00:00')
         test_transaction_repr = test_transaction.as_dict()
 
         try:
@@ -49,7 +49,3 @@ class SelfTest:
 
     except:
         print('Database classes file contains errors.')
-
-      
-
-    
