@@ -73,8 +73,8 @@ The bot will then be enabled on the current conversation or group chat. After th
 
 ## To Do: <a name = "to_do"></a>
 - [x] Finish DB
-- [ ] Start NPL
-- [ ] Finish README.md
+- [ ] Finish NPL
+- [x] Finish README.md
 
 ## Acknowledgements <a name = "acknowledgement"></a>
 
