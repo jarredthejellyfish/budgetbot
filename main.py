@@ -1,10 +1,6 @@
-#TOKEN: 1201255884:AAHPtfHGUuL_2AdrnEEpVMC26-M4e0L2g3A
-# @budgot_bot
-
-
-
 from database_classes import Transaction, Database
 from self_test import SelfTest
+from sensitive_data import token
 
 import telegram
 from telegram.ext import CallbackQueryHandler, CommandHandler, Filters, MessageHandler, Updater, dispatcher, run_async
@@ -12,8 +8,6 @@ from telegram import update
 
 import random
 import re
-
-token = '1201255884:AAHPtfHGUuL_2AdrnEEpVMC26-M4e0L2g3A'
 
 greetings = (
         'Hey there fellow finance enthusiast! I\'m @BudgetBot.',

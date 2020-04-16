@@ -11,3 +11,4 @@ __pycache__
 testing.py 
 self_test.py
 /userdata
+sensitive_data.py
